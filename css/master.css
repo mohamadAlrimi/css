@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo logo logo  nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont  said said said "
+        "fot fot fot fot  fot fot fot fot fot fot ";
+}
+
+h2 {
+    grid-area: logo;
+    background-color: red;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+
+section {
+    grid-area: cont;
+    background-color: yellow;
+    color: white;
+}
+
+aside {
+    grid-area: said;
+    background-color: green;
+    color: white;
+}
+
+footer {
+    grid-area: fot;
+    color: white;
+    background-color: black;
+}
