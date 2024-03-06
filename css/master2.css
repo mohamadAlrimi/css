@@ -1,0 +1,16 @@
+.image {
+    overflow: hidden;
+    width: 720px;
+    height: 350px;
+}
+
+.image img {
+    transition: 0.3s;
+
+}
+
+.image:hover img {
+    transform: scale(1.4) rotate(5deg);
+    transform: translate(50px, -50px);
+    opacity: .5;
+}
